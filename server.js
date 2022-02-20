@@ -12,7 +12,7 @@ app.use(bodyparser.urlencoded({ extended: false }));
 
 ///define routes
 app.get("/", function(req, res) {
-    res.sendFile("public/index.html", { root: __dirname });
+    res.sendFile("/index.html", { root: __dirname });
 
 })
 
