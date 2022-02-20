@@ -1,14 +1,118 @@
 <html>
 
-<head>
-</head>
+   
+    <body>
+      <form >
+        <div style="background-color:rgb(51, 56, 216);border:2px solid rgb(0, 26, 255);border-radius:6px" >
+        <fieldset>
+            <legend>Registration Details</legend>  
+            <table   height=80%>
+        
+            <form>
+            
+            <tr>
+                <td>
+                    University
+                    <td>
+                        <input type="text" id="name" name="name" placeholder="enter name" minlength="5" maxlength="20" required autofocus />
+                    </td>
+                </td>
 
-<body>
-    <form action="submit_data" method="post">
-        Number 1: <input type="text" name="num1" required> <br> Number2 <input type="text" name="num2" required><br>
-        <button type="submit" name="btn" value="add">addition</button>
-        <button type="submit" name="btn" value="fact">factorial</button>
-    </form>
+                
+            </tr>
+            <tr>
+                <td>
+                   Institute:
+                   <td>
+                       <input type="text" id="Iname" name="Iname" placeholder="Enter Institute Name" required />
+                
+                    </td>
+                 </td>
+                
+                
+            </tr>
+        <tr>
+            <td >Branch</td>
+            <td>
+                <select id="Branch" name="Branch">
+                <!--<option>----pls select one----</option>-->
+                 <option value="mech" selected>Mechanical Engineering</option>
+                 <option value="entc"  >ENTC Engineering</option>
+                 <option value="electrical">Electrical Engineering</option>
+                 <option value="comp">Computer Engineering</option>
+                 <option value="it">Information Technology Engineering</option>
+                </select>
+           </td>
+        </tr>
+
+
+            <tr>
+                <td >Degree</td>
+                <td><select id="degree" name="degree">
+                    <!--<option>----pls select one----</option>-->
+                     <option value="b.tech" selected>B.Tech</option>
+                     <option value="be"  >BE</option>
+                     <option value="bsc">Bsc</option>
+                     <option value="ba">BA</option>
+                     <option value="b.com">B.Com</option>
+                </select>
+                    <input type="radio" id="pursuing" name="pursuing" value="pursuing"> <label for="pursuing">Pursuing</label>
+                    <input type="radio" id="completed" name="completed" value="completed"> <label for="completed">Completed</label> <br>
+            </td>
+            </tr>
+
+            <tr>
+                <td >Avg CPA</td>
+                <td> 
+                            <input type="number" id="name" name="name" value="number" placeholder="CPA" min="0" max="10"/>
+                    Upto
+                            <input type="number" id="name" name="name"  value="number" placeholder="sem" min="0" max="8"/>
+                    Th Semister
+               </td>
+            </tr>
+
+            <tr>
+                <td >Experience</td>
+                <td>
+                            <input type="number" id="name" name="name" value="number" placeholder="Expeience" min="0" max="50"/>
+                       
+                    Years
+               </td>
+            </tr>
+
+            <tr>
+                <td>Your Website/Blogs</td>
+                <td>
+                    <input type="text" id="site" name="site" placeholder="http://" min="6" max="50" required />
+                </td>
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td> <input type="submit" name="btn" value="Submit">&nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="btn" value="clear"></td>
+                <td></td>
+            </tr>
+        </form>
+     
+    </table>
+</fieldset>
+</div>   
+    <div align="center" style="background-color:rgb(120, 124, 245)">
+        <table>
+            <tr align="center">
+                <td>
+                    <a href="../day2_lab/tableform.html "target=_blank">
+                        <img src="./previous.png" width=15 height=15>
+                    </a>
+                        Step 2
+                      <a href="../day3_lab/appointmentshedular.html" target="_blank">
+                        <img src="./forward.png" width=15 height=15>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
 </body>
-
 </html>
